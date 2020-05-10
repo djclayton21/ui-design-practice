@@ -25,17 +25,16 @@ body {
   background: darkblue;
   position: relative;
   max-height: 100vh;
-  overflow: hidden;
 }
 
 body:before {
   content: '';
-  height: 50%;
-  width: 100%;
-  background-color: skyblue;
-  position: absolute;
-  bottom: -50%;
-  left: 60%;
+  height: 50vw;
+  width: 75vw;
+  background: linear-gradient(darkblue, skyblue);
+  position: fixed;
+  bottom: -50vw;
+  left: 50%;
   transform-origin: 0 0;
   transform: rotate(-30deg);
   z-index: -1;
@@ -73,8 +72,8 @@ body:before {
 .container p {
   margin: 1rem 0 0 0;
   font-size: 1.2rem;
-  padding: 1rem 0 1rem .5rem;
-  border-left: .5rem solid darkblue;
-  border-radius: .5rem;
-  background: whitesmoke
+  padding: 1rem 0 1rem 0.5rem;
+  border-left: 0.5rem solid darkblue;
+  border-radius: 0.5rem;
+  background: whitesmoke;
 }
