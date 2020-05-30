@@ -35,6 +35,9 @@ nav {
   background: #1d2226;
   width: 66%;
   visibility: hidden;
+  opacity: 0;
+  transform: translateX(50%);
+  transition: all 0.3s;
 }
 
 .exit {
@@ -73,6 +76,8 @@ li a:hover {
 
 .open-nav {
   visibility: unset;
+  opacity: 1;
+  transform: translateX(0);
 }
 @media (min-width: 500px) {
   .open,
@@ -91,6 +96,8 @@ li a:hover {
     width: fit-content;
     background-color: #3d5262;
     color: white;
+    opacity: 1;
+    transform: none;
   }
   nav ul {
     margin: 0;
@@ -100,11 +107,11 @@ li a:hover {
   }
   nav li a {
     color: white;
-    padding: auto .5rem;
+    padding: auto 0.5rem;
   }
   a.logo {
     margin-top: 0;
     font-size: 1.3rem;
-    padding: .5rem;
+    padding: 0.5rem;
   }
 }
